@@ -4,34 +4,39 @@
  */
 package View;
 
+import javax.swing.JPanel;
+
 /**
  *
  * @author upash
  */
 public class HomePage extends javax.swing.JPanel {
-
+    
+    
     /**
      * Creates new form HomePage
      */
     public HomePage() {
-        initComponents();
-    }
-    public static void main(String[] args) {
-    javax.swing.SwingUtilities.invokeLater(new Runnable() {
-        public void run() {
-
-            javax.swing.JFrame frame = new javax.swing.JFrame("Home Page");
-            frame.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
-            frame.setSize(1200, 600);
-
-            // Add your JPanel to the frame
-            frame.setContentPane(new HomePage());
-
-            frame.setLocationRelativeTo(null); // center screen
-            frame.setVisible(true);
-        }
-    });
+    initComponents();
+    
+    
 }
+
+    public static void main(String[] args) {
+    javax.swing.SwingUtilities.invokeLater(() -> {
+        javax.swing.JFrame frame = new javax.swing.JFrame("Home Page");
+        frame.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
+        frame.setSize(1200, 800);
+        
+        // Add your JPanel to the frame
+        frame.setContentPane(new HomePage());
+        
+        frame.setLocationRelativeTo(null); // center screen
+        frame.setVisible(true);
+    });
+    
+}          
+        
 
 
     /**
@@ -43,37 +48,20 @@ public class HomePage extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1127, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 570, Short.MAX_VALUE)
-        );
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 1399, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addGap(0, 809, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
+
 }
